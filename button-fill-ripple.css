@@ -1,0 +1,56 @@
+.btn-rpl{
+    position: relative;
+    overflow: hidden;
+    background: none;
+    transition: background 0.25s ease-in 0.10s, 
+                color 0.15s ease-in 0s, 
+                border-color 0.25s linear 0.10s;
+}
+
+.btn-rpl:hover{
+    background: #ececec;
+}
+
+.btn-rpl:after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    width: 50%;
+    height: 160%;
+    top: -30%;
+    left: 0;
+    border-radius: 100%;
+    margin: 0 25%;
+    transition: 0.25s all ease-in;
+    z-index: -1;
+}
+
+.btn-rpl:hover:after{
+    width: 100%;
+    margin: 0;
+    background: #ececec;
+}
+
+.rpl-blue:hover, .rpl-blue:hover:after{
+    color: #FFF;
+    background: #596cd0;
+    border-color: #596cd0;
+}
+
+.rpl-red:hover, .rpl-red:hover:after{
+    color: #FFF;
+    background: #ce4848;
+    border-color: #ce4848;
+}
+
+.rpl-green:hover, .rpl-green:hover:after{
+    color: #FFF;
+    background: #5bc77d;
+    border-color: #5bc77d;
+}
+
+.rpl-purple:hover, .rpl-purple:hover:after{
+    color: #FFF;
+    background: #a074d0;
+    border-color: #a074d0;
+}

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Button Fill Ripple Example</title>
+        <style>
+            html{
+                font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+            }
+
+            body{
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #404040;
+            }
+
+            .btn-example{
+                background: #FFF;
+                border: 1px solid #DDD;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                outline: 0;
+            }
+
+            .btn-example:hover{
+                border: 1px solid #DDD;
+            }
+
+            .container{
+                margin-top: 40px;
+            }
+
+            .container div{
+                margin-top: 10px;
+            }
+        </style>
+        <link rel="stylesheet" href="button-fill-ripple.css">
+    </head>
+
+    <body>
+        <h1>Button Fill Ripple</h1>
+        <p>Spice your buttons up by adding a ripple effect that fills the button!</p>
+
+        <div class="container">
+            <p>Below is a standard button. Try hovering over it!</p>
+            <button class="btn-example btn-rpl">Example Button</button>
+            <code>
+                .btn-example, .btn-rpl
+            </code>
+        </div>
+
+        <div class="container">
+            <p>Here's some colors you can use:</p>
+            <div>
+                <button class="btn-example btn-rpl rpl-blue">Blue</button>
+                <code>
+                    .btn-rpl, .rpl-blue
+                </code>
+            </div>
+
+            <div>
+                <button class="btn-example btn-rpl rpl-red">Red</button>
+                <code>
+                    .btn-rpl, .rpl-red
+                </code>
+            </div>
+
+            <div>
+                <button class="btn-example btn-rpl rpl-green">Green</button>
+                <code>
+                    .btn-rpl, .rpl-green
+                </code>
+            </div>
+
+            <div>
+                <button class="btn-example btn-rpl rpl-purple">Purple</button>
+                <code>
+                    .btn-rpl, .rpl-purple
+                </code>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Custom Colors</h1>
+            <p>Want to make your own color? Add the following code to your styles:</p>
+            <pre>
+.rpl-custom:hover, .rpl-custom:hover:after{     /* Can be anything you want */
+    color: #FFF;
+    background: #a074d0;                        /* Custom color here */
+    border-color: #a074d0;                      /* Make it the same as the above color */
+}
+            </pre>
+            <p>Then add the following classes to your button:</p>
+            <code>.rpl-btn, .rpl-custom</code>
+        </div>
+    </body>
+
+</html>
