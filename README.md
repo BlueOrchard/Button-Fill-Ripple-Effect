@@ -1,4 +1,4 @@
-## Button Fill Ripple
+## Button Fill Ripple Effect
 
 Make it so your button has a ripple effect that fills with the color of the ripple when a user hovers over it!
 
